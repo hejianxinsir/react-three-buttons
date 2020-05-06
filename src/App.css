@@ -1,0 +1,16 @@
+.App{
+  margin: 100px 0;
+  text-align: center;
+}
+
+.btns > button {
+  border: 2px solid lightgray;
+  padding: 5px 8px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.btns > button:focus{
+  outline: none;
+  border-color:brown;
+}
