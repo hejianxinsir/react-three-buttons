@@ -13,6 +13,13 @@ class App extends Component{
       deltaY: 0
     }
   }
+
+  cancelAnimate(){
+    this.setState({
+      active: false
+    })
+  }
+
   render(){
     let gotN = this.props.n
     let self = this
@@ -24,8 +31,9 @@ class App extends Component{
             ref={this.myRef}
           >
             {this.state.active ?
-              <span className="dot" style={{top: this.state.deltaY, left: this.state.deltaX}}></span>
-             : ''}
+              <span className="dot" style={{top: this.state.deltaY, left: this.state.deltaX}}
+              onAnimationEnd={this.cancelAnimate.bind(this)}></span>
+            : ''}
             就+1
           </button>
           <button onClick={()=>this.props.addAfterOneSec()}>一秒后+1</button>

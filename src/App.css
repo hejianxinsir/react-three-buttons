@@ -12,7 +12,6 @@
 
 .btns > button:focus{
   outline: none;
-  border-color:brown;
 }
 
 .App .number{
@@ -21,11 +20,20 @@
 
 button.add1{
   position: relative;
+  overflow: hidden;
 }
 
 .dot{
   position: absolute;
   width: 6px; height: 6px;
-  background: red;
+  background: lightgray;
+  opacity: 0.3;
   border-radius: 50%;
+
+  Animation: 0.4s big forwards;
+}
+
+@keyframes big{
+  0%{transform: scale(0.1)}
+  100%{transform: scale(20)}
 }
