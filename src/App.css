@@ -14,3 +14,18 @@
   outline: none;
   border-color:brown;
 }
+
+.App .number{
+  color: brown;
+}
+
+button.add1{
+  position: relative;
+}
+
+.dot{
+  position: absolute;
+  width: 6px; height: 6px;
+  background: red;
+  border-radius: 50%;
+}
