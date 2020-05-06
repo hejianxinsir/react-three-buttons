@@ -2,27 +2,22 @@
   margin: 100px 0;
   text-align: center;
 }
-
 .btns > button {
   border: 2px solid lightgray;
   padding: 5px 8px;
   margin: 5px;
   border-radius: 3px;
 }
-
 .btns > button:focus{
   outline: none;
 }
-
 .App .number{
   color: brown;
 }
-
 button.add1{
   position: relative;
   overflow: hidden;
 }
-
 .dot{
   position: absolute;
   width: 6px; height: 6px;
@@ -32,7 +27,6 @@ button.add1{
 
   Animation: 0.4s big forwards;
 }
-
 @keyframes big{
   0%{transform: scale(0.1)}
   100%{transform: scale(20)}
